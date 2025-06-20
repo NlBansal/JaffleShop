@@ -1,0 +1,46 @@
+[0m14:22:44.712505 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7347d8c7bd10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7347d9f6a180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7347d7b6fe30>]}
+
+
+============================== 14:22:44.716648 | ecc89e03-80ef-4184-8f53-6f50474f07ad ==============================
+[0m14:22:44.716648 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:22:44.717316 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/naman/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init jaffleShopDbt', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:22:44.725587 [debug] [MainThread]: Starter project path: /home/naman/Desktop/JaffleShop/.env/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:22:44.728149 [info ] [MainThread]: 
+Your new dbt project "jaffleShopDbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:22:44.728886 [info ] [MainThread]: Setting up your profile.
+[0m14:24:58.401085 [info ] [MainThread]: Profile jaffleShopDbt written to /home/naman/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:24:58.407294 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 133.74629, "process_in_blocks": "5024", "process_kernel_time": 0.133525, "process_mem_max_rss": "102312", "process_out_blocks": "80", "process_user_time": 1.323206}
+[0m14:24:58.408176 [debug] [MainThread]: Command `dbt init` succeeded at 14:24:58.408008 after 133.75 seconds
+[0m14:24:58.408670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7347d7e58200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7347d76a24b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7347d74fb0b0>]}
+[0m14:24:58.409172 [debug] [MainThread]: Flushing usage events
+[0m14:24:59.402957 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:42:22.893538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7579c35bb170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7579c1643da0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7579c1640b60>]}
+
+
+============================== 14:42:22.899850 | 554ca8a6-ec48-4e2a-81e4-db51a8cca9ad ==============================
+[0m14:42:22.899850 [info ] [MainThread]: Running with dbt=1.10.1
+[0m14:42:22.900579 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/naman/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:42:22.901148 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/naman/Desktop/JaffleShop/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:42:22.902138 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.05921141, "process_in_blocks": "48", "process_kernel_time": 0.130656, "process_mem_max_rss": "97124", "process_out_blocks": "16", "process_user_time": 1.223784}
+[0m14:42:22.902626 [debug] [MainThread]: Command `dbt run` failed at 14:42:22.902522 after 0.06 seconds
+[0m14:42:22.903040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7579c34dd700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7579c1145be0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7579c35bb170>]}
+[0m14:42:22.903462 [debug] [MainThread]: Flushing usage events
+[0m14:42:23.853845 [debug] [MainThread]: An error was encountered while trying to flush usage events

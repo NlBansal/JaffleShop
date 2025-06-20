@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    schema: jaffle_data
+    quoting:
+      database: true
+      schema: true
+      identifier: true 
+    tables:
+      - name: raw_products
+      - name: raw_orders
+      - name: raw_customers
+      - name: raw_supplies
+      - name: raw_items
+      - name: raw_stores
+      - name: raw_suppliers
+
