@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+  - name: stg_customers
+    description: "A starter dbt model"
+
+  - name: stg_items
+    description: "A starter dbt model"
+
+  - name: stg_orders
+    description: "A starter dbt model"
+
+  - name: stg_products
+    description: "A starter dbt model"
+
+  - name: stg_stores
+    description: "A starter dbt model"
+
+  - name: stg_supplies
+    description: "A starter dbt model"
+
+  - name: stg_tweets
+    description: "A starter dbt model"
