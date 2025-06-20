@@ -13,8 +13,8 @@ with source as (
 
 cleaned as (
     select 
-        id as _id,
-        sku as product_id,
+        id as order_id,
+        customer as customer_id,
         store_id,
         subtotal,
         tax_paid,
