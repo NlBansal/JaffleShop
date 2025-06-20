@@ -1,14 +1,14 @@
 {{ 
     config(
         materialized='incremental',
-        unique_key='customer_id',
+        unique_key='order_id',
         incremental_strategy='merge',
         schema='staging'
     ) 
 }}
 
 with source as (
-    select * from {{ source('jaffle_shop', 'raw_items') }}
+    select * from {{ source('jaffle_shop', 'raw_orders') }}
 ), 
 
 cleaned as (

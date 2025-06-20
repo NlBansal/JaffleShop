@@ -14,5 +14,5 @@ sources:
       - name: raw_supplies
       - name: raw_items
       - name: raw_stores
-      - name: raw_suppliers
+      - name: raw_tweets
 
