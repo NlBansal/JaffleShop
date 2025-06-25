@@ -4,25 +4,25 @@
 ) }}
 
 WITH orders AS (
-    SELECT * FROM {{ ref('stg_orders') }}
+    SELECT * FROM {{ ref('stg_orders')}}
 ),
 customers AS (
-    SELECT * FROM {{ ref('stg_customers') }}
+    SELECT * FROM {{ ref('stg_customers')}}
 ),
 stores AS (
-    SELECT * FROM {{ ref('stg_stores') }}
+    SELECT * FROM {{ ref('stg_stores')}}
 ),
 items AS (
-    SELECT * FROM {{ ref('stg_items') }}
+    SELECT * FROM {{ ref('stg_items')}}
 ),
 products AS (
-    SELECT * FROM {{ ref('stg_products') }}
+    SELECT * FROM {{ ref('stg_products')}}
 ),
 supplies AS (
-    SELECT * FROM {{ ref('stg_supplies') }}
+    SELECT * FROM {{ ref('stg_supplies')}}
 ),
 tweets AS (
-    SELECT * FROM {{ ref('stg_tweets') }}
+    SELECT * FROM {{ ref('stg_tweets')}}
 )
 
 SELECT
@@ -74,3 +74,4 @@ LEFT JOIN tweets ON tweets.customer_id = customers.customer_id
 {% if is_incremental() %}
 WHERE orders.ordered_at > (SELECT MAX(ordered_at) FROM {{ this }})
 {% endif %}
+limit 1000
